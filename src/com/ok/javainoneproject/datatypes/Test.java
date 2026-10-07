@@ -135,5 +135,13 @@ public class Test {
         System.out.println("short value: " + shortValue);
         System.out.println("byte value: " + byteValue);
 
+        // string
+        String s1 = "Hello"; // Literal , and allocation of memory new in string pool ,store the value
+        String s2 = "Hello"; // here refers to the memory location of string pool of s1
+        String s3 = new String("hello"); // Contructor creating a new obj outside that pool
+
+        System.out.println(s1 == s2); // true (same reference in pool)
+        System.out.println(s1 == s3); // false as different objects
+        System.out.printlb(s1.equals(s3)); // true ( same content)
     }
 }
