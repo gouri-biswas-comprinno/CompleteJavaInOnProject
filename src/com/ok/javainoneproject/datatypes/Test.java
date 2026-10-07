@@ -142,6 +142,38 @@ public class Test {
 
         System.out.println(s1 == s2); // true (same reference in pool)
         System.out.println(s1 == s3); // false as different objects
-        System.out.printlb(s1.equals(s3)); // true ( same content)
+        System.out.println(s1.equals(s3)); // true ( same content)
+
+        String str = "Hello World";
+
+        // Length
+        System.out.println("Length: " + str.length());
+
+        // Character at index
+        System.out.println("Character: " + str.charAt(0));
+
+        // Uppercase
+        System.out.println("Uppercase: " + str.toUpperCase());
+
+        // Lowercase
+        System.out.println("Lowercase: " + str.toLowerCase());
+
+        // Contains
+        System.out.println("Contains World: " + str.contains("World"));
+
+        // Equals
+        System.out.println("Equals: " + str.equals("Hello World"));
+
+        // Substring
+        System.out.println("Substring: " + str.substring(0, 5));
+
+        // Replace
+        System.out.println("Replace: " + str.replace("World", "Java"));
+
+        // Concatenation
+        String name = "Gouri";
+        String message = "Hello " + name;
+
+        System.out.println("Concatenation: " + message);
     }
-}
+    }
