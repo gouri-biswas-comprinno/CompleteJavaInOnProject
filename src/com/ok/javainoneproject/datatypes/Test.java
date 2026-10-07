@@ -175,5 +175,26 @@ public class Test {
         String message = "Hello " + name;
 
         System.out.println("Concatenation: " + message);
+
+
+
+        int a1 = 20;
+        int a2 = 5;
+
+        // Addition
+        System.out.println("Addition: " + (a1 + a2));
+
+        // Subtraction
+        System.out.println("Subtraction: " + (a1 - a2));
+
+        // Multiplication
+        System.out.println("Multiplication: " + (a1 * a2));
+
+        // Division
+        System.out.println("Division: " + (a1 / a2));
+
+        // Modulus (Remainder)
+        System.out.println("Modulus: " + (a1 % a2));
+
     }
     }
