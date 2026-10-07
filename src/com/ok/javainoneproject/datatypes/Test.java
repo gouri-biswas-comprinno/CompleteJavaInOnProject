@@ -177,7 +177,7 @@ public class Test {
         System.out.println("Concatenation: " + message);
 
 
-
+        //arithmetic operations
         int a1 = 20;
         int a2 = 5;
 
@@ -195,6 +195,28 @@ public class Test {
 
         // Modulus (Remainder)
         System.out.println("Modulus: " + (a1 % a2));
+
+        //Bitwise Operations
+        int it1 = 5;  // 0101
+        int it2 = 3;  // 0011
+
+       // Bitwise AND
+        System.out.println("AND: " + (it1 & it2));
+
+       // Bitwise OR
+        System.out.println("OR: " + (it1 | it2));
+
+       // Bitwise XOR
+        System.out.println("XOR: " + (it1 ^ it2));
+
+       // Bitwise NOT
+        System.out.println("NOT: " + (~it1));
+
+        // Left Shift
+        System.out.println("Left Shift: " + (it1 << 1));
+
+          // Right Shift
+        System.out.println("Right Shift: " + (it1 >> 1));
 
     }
     }
