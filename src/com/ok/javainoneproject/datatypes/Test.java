@@ -104,21 +104,36 @@ public class Test {
         System.out.println((char) 10084);
 
 
-        //widening conversion
-        byte byteValue = 10;  // 1 byte // cup
-        short shortValue = byteValue; // 2 bytes // glass
-        int intValue = shortValue; // 4 bytes // jug
-        long longValue = intValue; // 8 bytes // bucket
-        float floatValue = longValue; // 4 bytes
-        double doubleValue = floatValue; // 8 bytes
+//        //widening conversion
+//        byte byteValue = 10;  // 1 byte // cup
+//        short shortValue = byteValue; // 2 bytes // glass
+//        int intValue = shortValue; // 4 bytes // jug
+//        long longValue = intValue; // 8 bytes // bucket
+//        float floatValue = longValue; // 4 bytes
+//        double doubleValue = floatValue; // 8 bytes
+//
+//        System.out.println("byte value: " + byteValue);
+//        System.out.println("short value: " + shortValue);
+//        System.out.println("int value: " + intValue);
+//        System.out.println("long value: " + longValue);
+//        System.out.println("float value: " + floatValue);
+//        System.out.println("double value: " + doubleValue);
 
-        System.out.println("byte value: " + byteValue);
-        System.out.println("short value: " + shortValue);
-        System.out.println("int value: " + intValue);
-        System.out.println("long value: " + longValue);
-        System.out.println("float value: " + floatValue);
+
+        // narrowing conversion
+        double doubleValue = 10.5;
+        float floatValue = (float) doubleValue;
+        long longValue = (long) floatValue;
+        int intValue = (int) longValue;
+        short shortValue = (short) intValue;
+        byte byteValue = (byte) shortValue;
+
         System.out.println("double value: " + doubleValue);
-
+        System.out.println("float value: " + floatValue);
+        System.out.println("long value: " + longValue);
+        System.out.println("int value: " + intValue);
+        System.out.println("short value: " + shortValue);
+        System.out.println("byte value: " + byteValue);
 
     }
 }
