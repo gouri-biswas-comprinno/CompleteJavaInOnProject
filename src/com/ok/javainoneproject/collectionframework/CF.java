@@ -1,4 +1,6 @@
 package com.ok.javainoneproject.collectionframework;
+import java.util.HashSet;
+import java.util.Set;
 
 import java.util.ArrayList;
 
@@ -20,6 +22,14 @@ public class CF {
         System.out.println(arrayList);
         System.out.println(arrayList.get(1));
         System.out.println(arrayList.contains(11));
+
+
+        Set<Integer> set = new HashSet<>();
+        set.add(1);
+        set.add(11);
+        set.add(111);
+        set.contains(2);
+        System.out.println(set);
 
         //List (Interface) --> implemented by ArrayList & LinkedList (class)
         //Set --> HashSet & LinkedHashSet
