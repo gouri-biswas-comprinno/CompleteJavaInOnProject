@@ -1,8 +1,5 @@
 package com.ok.javainoneproject.collectionframework;
-import java.util.HashSet;
-import java.util.Set;
-
-import java.util.ArrayList;
+import java.util.*;
 
 public class CF {
     public static void main(String[] args) {
@@ -30,6 +27,14 @@ public class CF {
         set.add(111);
         set.contains(2);
         System.out.println(set);
+
+
+        Map<Integer, String> map = new HashMap<>();
+        map.put(1, "Gouri");
+        map.put(2, "Soma");
+        map.put(3, "Sania");
+
+        System.out.println(map.get(2));
 
         //List (Interface) --> implemented by ArrayList & LinkedList (class)
         //Set --> HashSet & LinkedHashSet
