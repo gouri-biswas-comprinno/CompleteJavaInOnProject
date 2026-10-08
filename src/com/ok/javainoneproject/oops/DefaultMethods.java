@@ -9,7 +9,7 @@ public class DefaultMethods {
         vehicle.start();
         vehicle.showMessage();
     }
-}
+} 
 
 interface Vehicle {
 
